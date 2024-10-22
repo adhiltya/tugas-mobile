@@ -1,0 +1,27 @@
+class Mahasiswa {
+  // 2 fields
+  String nama;
+  int nim;
+
+  // Constructor dengan this keyword
+  Mahasiswa(this.nama, this.nim);
+
+  // Method pertama dengan 3 fields
+  void belajar(String mataKuliah, int durasiJam, String tempat) {
+    print('$nama sedang belajar $mataKuliah selama $durasiJam jam di $tempat.');
+  }
+
+  // Method kedua dengan 3 fields
+  void mengikutiUjian(String mataKuliah, String jenisUjian, int nilai) {
+    print('$nama mengikuti $jenisUjian untuk mata kuliah $mataKuliah dan mendapatkan nilai $nilai.');
+  }
+}
+
+void main() {
+  // Membuat objek dari class Mahasiswa
+  Mahasiswa mahasiswa1 = Mahasiswa('Adhiltya Agestria Muskitta', 07352211119);
+
+  // Memanggil method belajar dan mengikutiUjian
+  mahasiswa1.belajar('Pemrograman mobile', 3, 'perpustakaan');
+  mahasiswa1.mengikutiUjian('Pemrograman mobile', 'Ujian Tengah Semester', 85);
+}
